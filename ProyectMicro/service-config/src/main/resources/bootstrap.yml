@@ -7,9 +7,11 @@ spring:
       server:
         git:
           uri: https://github.com/pedrogg/ProyectMicro.git
-          searchPaths: config-data
+          searchPaths: con*
           username: ${GIT_USER}
           password: ${GIT_PASSWORD}
+          default-label: master
+          
           
   security:
     user:
