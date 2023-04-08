@@ -1,4 +1,18 @@
 
 server :
-	port : 8081
-	
+  port : 8081
+  
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/pedrogg/ProyectMicro.git
+          searchPath: config-data
+          user: ${GIT_USER}
+          password: ${GIT_PASSWORD}
+          
+  security:
+    user:
+      name: root
+      password: s3cr3t
