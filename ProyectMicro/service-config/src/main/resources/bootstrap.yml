@@ -8,7 +8,7 @@ spring:
       server:
         git:
           uri: https://github.com/pedrogg/ProyectMicro.git
-          searchPath: config-data
+          searchPaths: config-data
           user: ${GIT_USER}
           password: ${GIT_PASSWORD}
           
