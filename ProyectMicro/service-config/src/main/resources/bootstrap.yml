@@ -1,5 +1,5 @@
 server :
-  port : 8083
+  port : 8081
   
 spring:
   cloud:
@@ -7,7 +7,7 @@ spring:
       server:
         git:
           uri: https://github.com/pedrogg/ProyectMicro.git
-          searchPaths: con*
+          searchPaths: config-data
           username: ${GIT_USER}
           password: ${GIT_PASSWORD}
           default-label: master
