@@ -19,3 +19,5 @@ spring:
     user:
       name: root
       password: s3cr3t  
+logging.level.org.springframework.web: DEBUG
+logging.level.org.hibernate: ERROR
