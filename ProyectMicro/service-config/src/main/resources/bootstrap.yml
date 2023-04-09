@@ -1,23 +1,21 @@
-server :
-  port : 8081
-  
+server:
+  port: 8081
+
 spring:
   application:
-    name: configserver
+    name: service-config
   cloud:
     config:
       server:
         git:
-          uri: https://github.com/pedrogg/ProyectMicro
+          uri: https://github.com/pedrogg/ProyectMicro.git
           searchPaths: config-data
           username: ${GIT_USER}
           password: ${GIT_PASSWORD}
-          default-label: master
+          default-label: "master"
           clone-on-start: true
-          
           
   security:
     user:
       name: root
-      password: s3cr3t
-      
+      password: s3cr3t  
