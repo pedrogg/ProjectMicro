@@ -30,6 +30,7 @@
     <version>2.2.10.RELEASE</version>
 </dependency>
 
+
 <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-netflix-hystrix-dashboard -->
 <dependency>
     <groupId>org.springframework.cloud</groupId>
@@ -39,6 +40,14 @@
 
 
 
+
+	<!-- https://mvnrepository.com/artifact/de.codecentric/spring-boot-admin-server -->
+<!-- https://mvnrepository.com/artifact/de.codecentric/spring-boot-admin-starter-client -->
+<dependency>
+    <groupId>de.codecentric</groupId>
+    <artifactId>spring-boot-admin-starter-client</artifactId>
+    <version>3.0.1</version>
+</dependency>
 
 
 		<dependency>
@@ -98,6 +107,9 @@
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
+			
+			
+      
 		</dependencies>
 	</dependencyManagement>
 

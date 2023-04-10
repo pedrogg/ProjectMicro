@@ -2,7 +2,9 @@ package rw.admin;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-@EnableA
+
+import de.codecentric.boot.admin.server.config.EnableAdminServer;
+@EnableAdminServer
 @SpringBootApplication
 public class ServiceAdminApplication {
 
