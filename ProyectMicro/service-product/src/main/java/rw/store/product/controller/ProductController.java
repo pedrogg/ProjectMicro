@@ -35,15 +35,7 @@ public class ProductController {
 	
 	@Autowired
 	private ProductService productService;
-	
-//	@GetMapping
-//	public ResponseEntity<List<Product>> listProduct(){
-//		List<Product> products = productService.listAllProduct();
-//		if (products.isEmpty()) {
-//			return ResponseEntity.noContent().build();
-//		}
-//		return ResponseEntity.ok(products);
-//	}
+
 	
 	@GetMapping
 	public ResponseEntity<List<Product>> listProduct(@RequestParam(name = "categoryId", required = false) Long categoryId){
